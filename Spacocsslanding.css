@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    display: none;
+}
+
+menu:hover{
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    }
+    #Menu {
+        display: none;
+    }
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    width: fit-content;
+}
+
+main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#section1 {
+    background-size: contain;
+    background-color: #a69184b9;
+    position: relative; 
+    overflow: hidden;
+    #log1{
+        top: 50%;
+        width: 55%;
+        position: absolute;
+        opacity: 0.2;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #log2{
+        top: 50%;
+        width: 21.5%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+#section2 {
+    min-height: 100vh;
+    background-size: contain;
+    background-color: #D4C6B3;
+    position: relative; 
+    overflow: hidden;
+    border-top-width: 50px;
+    border-top-style: solid;
+    border-image-source: url('midias/Adorno preto.png');
+    border-image-slice: 50%;
+    border-image-repeat: repeat;
+    h2{
+        text-align: center;
+        margin-top: 4%;
+        font-size: 400%;
+        font-weight: 70;
+        font-family: serif;
+        color: #927D4E;
+    }
+    #P1{
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        border: 0;
+    }
+    span{
+        font-style: italic;
+        text-shadow: 2px 2px 2px #8C7C5E;
+    }
+    #log{
+        width: 10%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+#section3 {
+    background-color: #8C7C5E;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
